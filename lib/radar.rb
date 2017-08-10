@@ -17,7 +17,7 @@ class Radar
 
     raise NoSuchAirport if res.code == "404"
 
-    decoded = JSN.parse(res.body)
+    decoded = JSON.parse(res.body)
 
     Status.new(
       decoded.fetch("IATA"),
