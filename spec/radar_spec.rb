@@ -1,6 +1,6 @@
 require "webmock/rspec"
 
-require "radr"
+require "radar"
 
 RSpec.describe Radar, ".status_for" do
   context "when the airport can be found" do
